@@ -174,7 +174,7 @@ def mark():
     
     db_conn.commit()
 
-    return render_template('AddEmp.html')
+    return render_template('InsertEmp.html')
 
 
 
