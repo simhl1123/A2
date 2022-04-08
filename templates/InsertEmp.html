@@ -17,15 +17,15 @@
     }
     
     .nav-area li a {
-        color: #fff;
+        color: #333;
         text-decoration: none;
         padding: 5px 20px;
         font-size: 14px;
     }
     
     .nav-area li a:hover {
-        background: #fff;
-        color: #333;
+        background: #333;
+        color: #fff;
     }
     
     #logo img {
@@ -95,11 +95,11 @@
 </style>
 <header>
     <div id="logo">
-        <img src="{{url_for('static', filename='images/logo2.png')}}">
+        <img src="{{url_for('static', filename='images/logo2.jpg')}}">
     </div>
     <ul class="nav-area">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">About</a></li>
         <!-- <li><a href="#">Services</a></li> -->
         <!-- <li><a href="#">Portfolio</a></li> -->
 
